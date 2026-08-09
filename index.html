@@ -202,6 +202,20 @@
   .map .compass{stroke:var(--ink-soft);fill:var(--ink-soft)}
   .map .compass-txt{font-family:"Outfit",sans-serif;font-size:12px;font-weight:700;fill:var(--ink-soft)}
 
+  /* ---------- LINKS ---------- */
+  .links{margin-top:44px;border:1.5px solid var(--ink);border-radius:16px;background:rgba(255,255,255,.4);padding:20px 22px}
+  .links-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+  .links-title{font-family:"Fraunces",serif;font-weight:700;font-size:15px;letter-spacing:.08em;text-transform:uppercase}
+  .links-note{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+  .links-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .link-group h4{font-family:"Fraunces",serif;font-weight:700;font-size:14px;margin-bottom:10px;padding-bottom:6px;border-bottom:1px dashed var(--line)}
+  .link{display:flex;justify-content:space-between;align-items:baseline;gap:8px;text-decoration:none;color:var(--ink);padding:7px 0;border-bottom:1px solid var(--line);font-size:13.5px;transition:color .15s}
+  .link:hover{color:var(--t,var(--accent))}
+  .link .ln{font-weight:500}
+  .link .ar{font-size:12px;color:var(--t,var(--accent));flex-shrink:0}
+  .link .tag{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);display:block;margin-top:1px}
+  @media (max-width:860px){.links-grid{grid-template-columns:1fr}}
+
   /* ---------- COMPARE ---------- */
   .compare{padding:80px 0 20px}
   .sec-label{
@@ -363,41 +377,70 @@
         </div>
       </div>
 
-      <div class="map reveal">
-        <div class="map-head">
-          <span class="map-title">Costa Rica · Pacific side</span>
-          <span class="map-legend">
-            <span class="lg"><i class="dot base"></i>Home base</span>
-            <span class="lg"><i class="dot beach"></i>Beach</span>
-            <span class="lg"><i class="dot air"></i>Airport</span>
-            <span class="lg"><i class="dot day"></i>Day trip</span>
-          </span>
+      <div class="links reveal">
+        <div class="links-head">
+          <span class="links-title">Where to stay &amp; what to book</span>
+          <span class="links-note">Real listings · exact locations</span>
         </div>
-        <svg viewBox="0 0 1000 640" role="img" aria-label="Map of Costa Rica: Liberia airport, La Fortuna, Playa Conchal">
-          <path class="ctx" d="M 168.1,86.6 L 86.8,33.7 L -23.0,-34.1 L 636.4,-48.6 L 652.5,-4.2 L 604.4,38.8 L 615.4,84.2 L 651.4,111.8 L 595.1,147.4 L 525.8,136.2 L 486.9,101.6 L 412.3,87.6 L 358.3,109.5 L 203.5,65.0 L 168.1,86.6 Z"/>
-          <path class="main" d="M 813.5,567.9 L 686.0,530.6 L 638.3,495.3 L 665.3,466.1 L 656.8,429.0 L 591.7,388.8 L 499.2,355.7 L 418.3,334.2 L 402.9,285.0 L 341.2,255.0 L 356.3,303.9 L 309.5,344.0 L 255.8,297.4 L 180.3,280.8 L 148.2,246.9 L 149.5,195.7 L 180.6,142.8 L 114.3,119.1 L 168.1,86.6 L 203.5,65.0 L 358.3,109.5 L 412.3,87.6 L 486.9,101.6 L 525.8,136.2 L 595.1,147.4 L 651.4,111.8 L 710.9,203.1 L 801.8,270.8 L 912.1,342.5 L 821.2,357.5 L 822.6,425.2 L 871.4,450.1 L 836.3,470.0 L 845.4,500.5 L 825.9,534.5 L 813.5,567.9 Z"/>
-          <polyline class="route" points="207.7,169.9 418.9,190.3 147.6,210.8"/>
-          <g transform="translate(207.7,169.9)">
-            <path class="m-air" d="M0 -7 L7 0 L0 7 L-7 0 Z"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">Liberia</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">airport</text>
-          </g>
-          <g transform="translate(418.9,190.3)">
-            <circle class="m-base" r="7"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">La Fortuna</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">home base</text>
-          </g>
-          <g transform="translate(147.6,210.8)">
-            <circle class="m-beach" r="7"/>
-            <circle class="m-beach-ring" r="11"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">Playa Conchal</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">beach resort</text>
-          </g>
-          <g class="compass" transform="translate(952,58)">
-            <path d="M0 -20 L6 5 L0 0 L-6 5 Z"/>
-            <text class="compass-txt" x="0" y="-26" text-anchor="middle">N</text>
-          </g>
-        </svg>
+        <div class="links-grid">
+          <div class="link-group">
+            <h4>Adventure base · La Fortuna</h4>
+            <a class="link" href="https://www.arenalvolcanicvillas.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Arenal Volcanic Villas</span><span class="tag">Interconnectable villas · sleeps 10</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.xanaduarenal.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Villa Xanadú</span><span class="tag">5BR villa · sleeps 14 · pool + waterslide</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/la-fortuna-alajuela-province-costa-rica/stays" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — La Fortuna</span><span class="tag">Search villas &amp; homes</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Beach base · Guanacaste</h4>
+            <a class="link" href="https://www.marriott.com/en-us/hotels/lirwi-the-westin-reserva-conchal-an-all-inclusive-golf-resort-and-spa/" target="_blank" rel="noopener">
+              <span><span class="ln">Westin Reserva Conchal</span><span class="tag">All-inclusive resort · Playa Conchal</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/playa-conchal-costa-rica/stays" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — Playa Conchal</span><span class="tag">Search rentals</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.vrbo.com/vacation-rentals/central-america/costa-rica/guanacaste/tamarindo" target="_blank" rel="noopener">
+              <span><span class="ln">VRBO — Tamarindo</span><span class="tag">Search rentals</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Book the adventures</h4>
+            <a class="link" href="https://arenalrafting.com/arenal-rafting-tours-la-fortuna/rio-sarapiqui-river/" target="_blank" rel="noopener">
+              <span><span class="ln">Sarapiquí River rafting</span><span class="tag">Arenal Rafting · from La Fortuna</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.cataratalafortuna.com/" target="_blank" rel="noopener">
+              <span><span class="ln">La Fortuna Waterfall</span><span class="tag">Official site</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://skyadventures.travel/ziplines/" target="_blank" rel="noopener">
+              <span><span class="ln">Sky Trek zip lines</span><span class="tag">Sky Adventures Arenal</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://tabacon.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Tabacón hot springs</span><span class="tag">Thermal river resort</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.tamarindodiving.net/" target="_blank" rel="noopener">
+              <span><span class="ln">Catalina Islands snorkeling</span><span class="tag">Tamarindo Diving</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.acguanacaste.ac.cr/turismo/sector-pailas" target="_blank" rel="noopener">
+              <span><span class="ln">Rincón de la Vieja</span><span class="tag">Waterfall hikes · Sector Pailas</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="trip-body">
@@ -451,41 +494,58 @@
         </div>
       </div>
 
-      <div class="map reveal">
-        <div class="map-head">
-          <span class="map-title">Costa Rica · Central + Pacific</span>
-          <span class="map-legend">
-            <span class="lg"><i class="dot base"></i>Home base</span>
-            <span class="lg"><i class="dot beach"></i>Beach</span>
-            <span class="lg"><i class="dot air"></i>Airport</span>
-            <span class="lg"><i class="dot day"></i>Day trip</span>
-          </span>
+      <div class="links reveal">
+        <div class="links-head">
+          <span class="links-title">Where to stay &amp; what to book</span>
+          <span class="links-note">Real listings · exact locations</span>
         </div>
-        <svg viewBox="0 0 1000 640" role="img" aria-label="Map of Costa Rica: San José airport, La Fortuna, Manuel Antonio">
-          <path class="ctx" d="M 168.1,86.6 L 86.8,33.7 L -23.0,-34.1 L 636.4,-48.6 L 652.5,-4.2 L 604.4,38.8 L 615.4,84.2 L 651.4,111.8 L 595.1,147.4 L 525.8,136.2 L 486.9,101.6 L 412.3,87.6 L 358.3,109.5 L 203.5,65.0 L 168.1,86.6 Z"/>
-          <path class="main" d="M 813.5,567.9 L 686.0,530.6 L 638.3,495.3 L 665.3,466.1 L 656.8,429.0 L 591.7,388.8 L 499.2,355.7 L 418.3,334.2 L 402.9,285.0 L 341.2,255.0 L 356.3,303.9 L 309.5,344.0 L 255.8,297.4 L 180.3,280.8 L 148.2,246.9 L 149.5,195.7 L 180.6,142.8 L 114.3,119.1 L 168.1,86.6 L 203.5,65.0 L 358.3,109.5 L 412.3,87.6 L 486.9,101.6 L 525.8,136.2 L 595.1,147.4 L 651.4,111.8 L 710.9,203.1 L 801.8,270.8 L 912.1,342.5 L 821.2,357.5 L 822.6,425.2 L 871.4,450.1 L 836.3,470.0 L 845.4,500.5 L 825.9,534.5 L 813.5,567.9 Z"/>
-          <polyline class="route" points="521.4,270.6 418.9,190.3 535.2,373.2 521.4,270.6"/>
-          <g transform="translate(521.4,270.6)">
-            <path class="m-air" d="M0 -7 L7 0 L0 7 L-7 0 Z"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">San José</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">airport</text>
-          </g>
-          <g transform="translate(418.9,190.3)">
-            <circle class="m-base" r="7"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">La Fortuna</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">home base</text>
-          </g>
-          <g transform="translate(535.2,373.2)">
-            <circle class="m-beach" r="7"/>
-            <circle class="m-beach-ring" r="11"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">Manuel Antonio</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">beach resort</text>
-          </g>
-          <g class="compass" transform="translate(952,58)">
-            <path d="M0 -20 L6 5 L0 0 L-6 5 Z"/>
-            <text class="compass-txt" x="0" y="-26" text-anchor="middle">N</text>
-          </g>
-        </svg>
+        <div class="links-grid">
+          <div class="link-group">
+            <h4>Adventure base · La Fortuna</h4>
+            <a class="link" href="https://www.xanaduarenal.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Villa Xanadu</span><span class="tag">5BR villa · sleeps 14 · volcano views</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/la-fortuna-alajuela-province-costa-rica/stays" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — La Fortuna</span><span class="tag">Search villas &amp; homes</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Beach base · Manuel Antonio</h4>
+            <a class="link" href="https://www.tulemarresort.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Tulemar Resort</span><span class="tag">Boutique resort · 33-acre jungle estate</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/manuel-antonio-quepos-costa-rica/stays" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — Manuel Antonio</span><span class="tag">Search villas &amp; homes</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Book the adventures</h4>
+            <a class="link" href="https://arenalrafting.com/arenal-rafting-tours-la-fortuna/rio-sarapiqui-river/" target="_blank" rel="noopener">
+              <span><span class="ln">Sarapiquí River rafting</span><span class="tag">Arenal Rafting · from La Fortuna</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://skyadventures.travel/ziplines/" target="_blank" rel="noopener">
+              <span><span class="ln">Sky Trek zip lines</span><span class="tag">Sky Adventures Arenal</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://serviciosenlinea.sinac.go.cr/" target="_blank" rel="noopener">
+              <span><span class="ln">Manuel Antonio park tickets</span><span class="tag">Official SINAC booking</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.mangrovetoursmanuelantonio.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Damas Island mangrove tour</span><span class="tag">Monkeys, sloths, birds</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://chocolatetourlafortuna.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Chocolate tour</span><span class="tag">La Fortuna cocoa farm</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="trip-body">
@@ -496,7 +556,7 @@
           <div class="day"><div class="dlabel"><b>D4</b> · Mon 8</div><p>Zip lines + chocolate tour + Arenal volcano hike.</p></div>
           <div class="day"><div class="dlabel"><b>D5</b> · Tue 9</div><p>Drive to <span class="hl">Manuel Antonio</span> (3.5h). Check into a boutique resort on the green coast.</p></div>
           <div class="day"><div class="dlabel"><b>D6</b> · Wed 10</div><p><span class="hl">Manuel Antonio National Park</span> — sloths, capuchins, white-sand beach.</p></div>
-          <div class="day"><div class="dlabel"><b>D7</b> · Thu 11</div><p>Damás Island snorkeling boat trip, or waterfall + beach day.</p></div>
+          <div class="day"><div class="dlabel"><b>D7</b> · Thu 11</div><p>Damas Island mangrove boat tour (monkeys, sloths), or waterfall + beach day.</p></div>
           <div class="day"><div class="dlabel"><b>D8</b> · Fri 12</div><p>Beach day — kayaking, wildlife spotting, relax.</p></div>
           <div class="day"><div class="dlabel"><b>D9</b> · Sat 13</div><p>Fly out of SJO.</p></div>
         </div>
@@ -537,46 +597,66 @@
         </div>
       </div>
 
-      <div class="map reveal">
-        <div class="map-head">
-          <span class="map-title">Belize + Guatemala</span>
-          <span class="map-legend">
-            <span class="lg"><i class="dot base"></i>Home base</span>
-            <span class="lg"><i class="dot beach"></i>Beach</span>
-            <span class="lg"><i class="dot air"></i>Airport</span>
-            <span class="lg"><i class="dot day"></i>Day trip</span>
-          </span>
+      <div class="links reveal">
+        <div class="links-head">
+          <span class="links-title">Where to stay &amp; what to book</span>
+          <span class="links-note">Real listings · exact locations</span>
         </div>
-        <svg viewBox="0 0 1000 640" role="img" aria-label="Map of Belize and Guatemala: Belize City airport, San Ignacio, Tikal, Ambergris Caye">
-          <path class="ctx" d="M -46.1,196.6 L 298.0,198.7 L 295.1,344.8 L 266.0,552.8 L 377.0,552.8 L 498.3,586.1 L 530.4,558.6 L 639.5,582.2 L 470.0,652.5 Z"/>
-          <path class="main" d="M 298.0,198.7 L 295.0,171.5 L 340.1,163.0 L 407.6,184.8 L 540.9,73.6 L 611.6,71.2 L 613.0,98.2 L 683.5,99.0 L 677.3,149.2 L 617.1,228.9 L 649.6,257.4 L 610.6,323.4 L 634.1,341.0 L 591.0,434.1 L 517.9,483.0 L 450.7,488.9 L 377.0,552.8 L 266.0,552.8 L 295.1,344.8 L 298.0,198.7 Z"/>
-          <polyline class="route" points="608.6,248.3 325.3,318.4 119.2,306.7 325.3,318.4 737.7,177.9 608.6,248.3"/>
-          <g transform="translate(608.6,248.3)">
-            <path class="m-air" d="M0 -7 L7 0 L0 7 L-7 0 Z"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">Belize City</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">airport</text>
-          </g>
-          <g transform="translate(325.3,318.4)">
-            <circle class="m-base" r="7"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">San Ignacio</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">home base</text>
-          </g>
-          <g transform="translate(119.2,306.7)">
-            <circle class="m-day" r="7"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">Tikal</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">day trip</text>
-          </g>
-          <g transform="translate(737.7,177.9)">
-            <circle class="m-beach" r="7"/>
-            <circle class="m-beach-ring" r="11"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">Ambergris Caye</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">beach resort</text>
-          </g>
-          <g class="compass" transform="translate(952,58)">
-            <path d="M0 -20 L6 5 L0 0 L-6 5 Z"/>
-            <text class="compass-txt" x="0" y="-26" text-anchor="middle">N</text>
-          </g>
-        </svg>
+        <div class="links-grid">
+          <div class="link-group">
+            <h4>Adventure base · San Ignacio</h4>
+            <a class="link" href="https://chaacreek.com/" target="_blank" rel="noopener">
+              <span><span class="ln">The Lodge at Chaa Creek</span><span class="tag">Eco-lodge · 400-acre rainforest reserve</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://kaanabelize.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Ka'ana Resort</span><span class="tag">Boutique jungle resort · villas</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/san-ignacio-belize/stays" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — San Ignacio</span><span class="tag">Search rentals</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Beach base · Ambergris Caye</h4>
+            <a class="link" href="https://alaiabelize.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Alaia Belize</span><span class="tag">Beachfront resort · 2–3BR villas</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/san-pedro-belize/stays" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — San Pedro</span><span class="tag">Search beachfront villas</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Book the adventures</h4>
+            <a class="link" href="https://www.pacztours.net/actun-tunichil-muknal/" target="_blank" rel="noopener">
+              <span><span class="ln">ATM Cave</span><span class="tag">Pacz Tours · full day</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://ogcavetubingandtours.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Cave tubing</span><span class="tag">O.G. Cave Tubing &amp; Tours</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://nichbelize.org/product/xunantunich/" target="_blank" rel="noopener">
+              <span><span class="ln">Xunantunich ruins</span><span class="tag">Official NICH site</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://calicojacksvillage.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Zip lines</span><span class="tag">Calico Jack's Village</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.pacztours.net/belize/tikal/" target="_blank" rel="noopener">
+              <span><span class="ln">Tikal day trip</span><span class="tag">Pacz Tours · from San Ignacio</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://amigosdivebelize.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Hol Chan + Shark Ray Alley</span><span class="tag">Amigos del Mar · San Pedro</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="trip-body">
@@ -629,40 +709,66 @@
         </div>
       </div>
 
-      <div class="map reveal">
-        <div class="map-head">
-          <span class="map-title">Panama · Western highlands</span>
-          <span class="map-legend">
-            <span class="lg"><i class="dot base"></i>Home base</span>
-            <span class="lg"><i class="dot beach"></i>Beach</span>
-            <span class="lg"><i class="dot air"></i>Airport</span>
-            <span class="lg"><i class="dot day"></i>Day trip</span>
-          </span>
+      <div class="links reveal">
+        <div class="links-head">
+          <span class="links-title">Where to stay &amp; what to book</span>
+          <span class="links-note">Real listings · exact locations</span>
         </div>
-        <svg viewBox="0 0 1000 640" role="img" aria-label="Map of western Panama: David airport, Boquete, Bocas del Toro">
-          <path class="main" d="M 1059.2,264.7 L 1007.5,347.5 L 904.5,407.3 L 848.8,415.6 L 823.8,465.2 L 945.5,594.4 L 875.8,624.8 L 839.0,660.1 L 720.3,672.3 L 676.1,530.0 L 642.9,570.5 L 558.8,556.5 L 507.3,460.7 L 402.7,444.9 L 336.5,417.1 L 227.0,417.4 L 219.1,469.1 L 189.9,433.1 L 203.3,385.8 L 224.5,337.5 L 214.6,294.5 L 252.8,266.3 L 199.7,230.9 L 198.2,135.0 L 296.9,113.8 L 388.5,199.2 L 383.3,249.6 L 485.1,260.3 L 509.1,241.0 L 579.3,299.5 L 704.8,282.3 L 813.3,222.1 L 968.2,174.1 L 1055.3,102.9 Z"/>
-          <polyline class="route" points="325.3,393.6 326.5,301.0 374.5,167.5"/>
-          <g transform="translate(325.3,393.6)">
-            <path class="m-air" d="M0 -7 L7 0 L0 7 L-7 0 Z"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">David</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">airport</text>
-          </g>
-          <g transform="translate(326.5,301.0)">
-            <circle class="m-base" r="7"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">Boquete</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">home base</text>
-          </g>
-          <g transform="translate(374.5,167.5)">
-            <circle class="m-beach" r="7"/>
-            <circle class="m-beach-ring" r="11"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">Bocas del Toro</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">beach</text>
-          </g>
-          <g class="compass" transform="translate(952,58)">
-            <path d="M0 -20 L6 5 L0 0 L-6 5 Z"/>
-            <text class="compass-txt" x="0" y="-26" text-anchor="middle">N</text>
-          </g>
-        </svg>
+        <div class="links-grid">
+          <div class="link-group">
+            <h4>Adventure base · Boquete</h4>
+            <a class="link" href="https://hotelfincalerida.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Finca Lérida Coffee Estate</span><span class="tag">Historic hotel · coffee estate</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://losmolinoshotel.com/en/" target="_blank" rel="noopener">
+              <span><span class="ln">Hacienda Los Molinos</span><span class="tag">Boutique hotel · river canyon</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/boquete-panama/stays" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — Boquete</span><span class="tag">Search rentals</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Beach base · Bocas del Toro</h4>
+            <a class="link" href="https://www.redfrogbeach.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Red Frog Beach Island Resort</span><span class="tag">Isla Bastimentos resort</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/bocas-del-toro-province-panama/stays" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — Bocas del Toro</span><span class="tag">Search rentals</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Book the adventures</h4>
+            <a class="link" href="https://www.boqueteoutdooradventures.com/rafting.html" target="_blank" rel="noopener">
+              <span><span class="ln">Rio Caldera rafting</span><span class="tag">Boquete Outdoor Adventures</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://panamagreatadventures.com/tour/river-rafting/" target="_blank" rel="noopener">
+              <span><span class="ln">Chiriquí Viejo rafting</span><span class="tag">Panama Great Adventures</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://treetrekboquete.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Boquete Tree Trek zip lines</span><span class="tag">40-ha adventure park</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.volcan-ecotours.com/en/service-page/sendero-los-quetzales-bqt" target="_blank" rel="noopener">
+              <span><span class="ln">Quetzal Trail hike</span><span class="tag">Volcán Ecotours</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://donpepestatecoffee.com/en/" target="_blank" rel="noopener">
+              <span><span class="ln">Geisha coffee tour</span><span class="tag">Don Pepe Estate</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.pangeabocas.com/experiences-pangea/our-tours-pangea/punta-hospital" target="_blank" rel="noopener">
+              <span><span class="ln">Bocas snorkeling</span><span class="tag">Pangea · Punta Hospital</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="trip-body">
@@ -715,41 +821,66 @@
         </div>
       </div>
 
-      <div class="map reveal">
-        <div class="map-head">
-          <span class="map-title">Honduras · North coast</span>
-          <span class="map-legend">
-            <span class="lg"><i class="dot base"></i>Home base</span>
-            <span class="lg"><i class="dot beach"></i>Beach</span>
-            <span class="lg"><i class="dot air"></i>Airport</span>
-            <span class="lg"><i class="dot day"></i>Day trip</span>
-          </span>
+      <div class="links reveal">
+        <div class="links-head">
+          <span class="links-title">Where to stay &amp; what to book</span>
+          <span class="links-note">Real listings · exact locations</span>
         </div>
-        <svg viewBox="0 0 1000 640" role="img" aria-label="Map of northern Honduras: San Pedro Sula airport, Pico Bonito, Roatán">
-          <path class="main" d="M -74.4,708.6 L 31.1,421.1 L 158.2,312.1 L 187.2,323.2 L 248.4,273.0 L 328.2,268.9 L 354.1,292.2 L 397.4,278.0 L 527.0,303.8 L 656.0,296.3 L 745.7,264.7 L 778.5,232.7 L 867.4,247.5 L 934.2,266.9 L 1007.1,260.2 L 1062.6,235.5 L 1079.1,579.9 L 1043.3,648.1 L 1016.5,645.7 L 1011.9,704.5 Z"/>
-          <path class="main" d="M 561.4,154.3 L 606.0,131.4 L 661.8,114.3 L 717.6,120.0 L 751.1,137.1 L 728.8,157.1 L 673.0,165.7 L 611.6,162.9 L 561.4,154.3 Z"/>
-          <polyline class="route" points="242.3,390.7 541.9,314.3 614.4,148.6"/>
-          <g transform="translate(242.3,390.7)">
-            <path class="m-air" d="M0 -7 L7 0 L0 7 L-7 0 Z"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">San Pedro Sula</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">airport</text>
-          </g>
-          <g transform="translate(541.9,314.3)">
-            <circle class="m-base" r="7"/>
-            <text class="lbl" x="0" y="-16" text-anchor="middle">Pico Bonito</text>
-            <text class="lbl-sub" x="0" y="24" text-anchor="middle">home base</text>
-          </g>
-          <g transform="translate(614.4,148.6)">
-            <circle class="m-beach" r="7"/>
-            <circle class="m-beach-ring" r="11"/>
-            <text class="lbl" x="0" y="30" text-anchor="middle">Roatán</text>
-            <text class="lbl-sub" x="0" y="46" text-anchor="middle">beach resort</text>
-          </g>
-          <g class="compass" transform="translate(952,58)">
-            <path d="M0 -20 L6 5 L0 0 L-6 5 Z"/>
-            <text class="compass-txt" x="0" y="-26" text-anchor="middle">N</text>
-          </g>
-        </svg>
+        <div class="links-grid">
+          <div class="link-group">
+            <h4>Adventure base · Pico Bonito</h4>
+            <a class="link" href="https://www.picobonito.com/" target="_blank" rel="noopener">
+              <span><span class="ln">The Lodge at Pico Bonito</span><span class="tag">Official eco-lodge</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.villaspicobonito.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Villas Pico Bonito</span><span class="tag">Jungle eco-resort</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/la-ceiba-honduras/stays" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — La Ceiba</span><span class="tag">Search rentals</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Beach base · Roatán</h4>
+            <a class="link" href="https://www.infinitybay.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Infinity Bay Resort</span><span class="tag">West Bay beachfront</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.westbayvillage.com/vacation-rental/casa-martin/" target="_blank" rel="noopener">
+              <span><span class="ln">Casa Martin — West Bay Village</span><span class="tag">3BR on the beach</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.airbnb.com/west-bay-beach-honduras/stays/beachfront" target="_blank" rel="noopener">
+              <span><span class="ln">Airbnb — West Bay beachfront</span><span class="tag">Search rentals</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+          <div class="link-group">
+            <h4>Book the adventures</h4>
+            <a class="link" href="https://omegatours.info/whitewater-rafting-lower-section" target="_blank" rel="noopener">
+              <span><span class="ln">Cangrejal River rafting</span><span class="tag">Omega Tours</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://laceibaadventures.com/" target="_blank" rel="noopener">
+              <span><span class="ln">Zip lines near Pico Bonito</span><span class="tag">La Ceiba Adventures</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://visitatlantida.com/en/pico-bonito-trails/" target="_blank" rel="noopener">
+              <span><span class="ln">Pico Bonito hiking trails</span><span class="tag">Visita Atlántida</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://www.westbaytours.com/products/west-bay-snorkeling-guided-trip" target="_blank" rel="noopener">
+              <span><span class="ln">West Bay snorkeling</span><span class="tag">West Bay Tours</span></span>
+              <span class="ar">→</span>
+            </a>
+            <a class="link" href="https://bluereefexplorers.com/roat%C3%A1n-snorkeling" target="_blank" rel="noopener">
+              <span><span class="ln">Reef snorkeling</span><span class="tag">Blue Reef Explorers</span></span>
+              <span class="ar">→</span>
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="trip-body">

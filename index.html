@@ -1,0 +1,722 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Central America — Five Ways to Go · Family Trip, March 2027</title>
+<meta name="description" content="A family trip brochure: five Central America itineraries for March 5–14, 2027. Rafting, snorkeling, jungle hikes, and beach resorts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Outfit:wght@300..700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F5EEDF;
+    --paper-2:#EFE6D2;
+    --ink:#221C12;
+    --ink-soft:#5C5240;
+    --line:rgba(34,28,18,.16);
+    --accent:#C4451F;
+    --accent-2:#0E7C7B;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Outfit",sans-serif;
+    font-weight:400;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  /* paper grain */
+  body::before{
+    content:"";
+    position:fixed;inset:0;z-index:0;pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .05 0'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+    opacity:.5;
+  }
+  .wrap{position:relative;z-index:1;max-width:1080px;margin:0 auto;padding:0 28px}
+
+  /* ---------- HERO ---------- */
+  .hero{padding:64px 0 40px;position:relative}
+  .hero-top{
+    display:flex;justify-content:space-between;align-items:center;
+    font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-soft);
+    border-top:2px solid var(--ink);border-bottom:1px solid var(--line);
+    padding:10px 0;margin-bottom:56px;
+  }
+  .hero-top b{color:var(--ink);font-weight:600}
+  .hero-title{
+    font-family:"Fraunces",serif;
+    font-weight:900;
+    font-size:clamp(56px,11vw,128px);
+    line-height:.92;
+    letter-spacing:-.02em;
+    text-transform:uppercase;
+  }
+  .hero-title .row{display:block}
+  .hero-title .row2{
+    color:transparent;
+    -webkit-text-stroke:2px var(--ink);
+  }
+  .hero-sub{
+    margin-top:28px;max-width:560px;
+    font-family:"Fraunces",serif;font-style:italic;font-weight:500;
+    font-size:clamp(20px,3vw,28px);line-height:1.25;color:var(--ink);
+  }
+  .hero-sub em{color:var(--accent);font-style:italic}
+  .hero-meta{
+    margin-top:20px;display:flex;flex-wrap:wrap;gap:10px;
+  }
+  .meta-chip{
+    font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;
+    border:1px solid var(--line);border-radius:999px;padding:7px 14px;color:var(--ink-soft);
+    background:rgba(255,255,255,.35);
+  }
+  /* passport stamp */
+  .stamp{
+    position:absolute;top:150px;right:6%;
+    width:150px;height:150px;opacity:.9;
+    animation:spin-in 1.2s cubic-bezier(.2,.8,.2,1) both;
+  }
+  @keyframes spin-in{from{transform:rotate(-40deg) scale(.6);opacity:0}to{transform:rotate(0) scale(1);opacity:.9}}
+  .stamp svg{width:100%;height:100%}
+  .stamp .ring{fill:none;stroke:var(--accent);stroke-width:2.5}
+  .stamp .txt{fill:var(--accent);font-family:"Outfit",sans-serif;font-size:11.5px;letter-spacing:.28em;font-weight:600}
+  .stamp .core{fill:var(--accent)}
+  .stamp .core-txt{fill:var(--paper);font-family:"Fraunces",serif;font-weight:700;font-size:15px;letter-spacing:.05em}
+
+  /* trip index tickets */
+  .tickets{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:56px}
+  .ticket{
+    text-decoration:none;color:var(--ink);
+    border:1.5px solid var(--ink);border-radius:14px;
+    padding:16px 14px;background:rgba(255,255,255,.4);
+    transition:transform .25s cubic-bezier(.2,.8,.2,1),box-shadow .25s;
+    position:relative;overflow:hidden;
+  }
+  .ticket:hover{transform:translateY(-4px);box-shadow:0 14px 30px -18px rgba(34,28,18,.5)}
+  .ticket .num{font-family:"Fraunces",serif;font-weight:900;font-size:26px;line-height:1;color:var(--t,var(--accent))}
+  .ticket .tname{font-weight:600;font-size:13px;margin-top:8px;line-height:1.2}
+  .ticket .tloc{font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin-top:4px}
+  .ticket::after{
+    content:"";position:absolute;left:0;bottom:0;height:4px;width:100%;
+    background:var(--t,var(--accent));transform:scaleX(0);transform-origin:left;
+    transition:transform .3s;
+  }
+  .ticket:hover::after{transform:scaleX(1)}
+
+  /* ---------- TRIP SECTIONS ---------- */
+  .trip{padding:72px 0 8px;scroll-margin-top:20px}
+  .trip-head{display:grid;grid-template-columns:1fr 1.6fr;gap:40px;align-items:start;position:relative}
+  .trip-num{
+    font-family:"Fraunces",serif;font-weight:900;
+    font-size:clamp(90px,14vw,170px);line-height:.8;
+    color:var(--t,var(--accent));
+    -webkit-text-stroke:0;
+    position:relative;
+  }
+  .trip-num::after{
+    content:"";position:absolute;left:0;bottom:-14px;width:64px;height:6px;
+    background:var(--t,var(--accent));border-radius:3px;
+  }
+  .trip-name{
+    font-family:"Fraunces",serif;font-weight:800;
+    font-size:clamp(30px,4.4vw,46px);line-height:1.02;letter-spacing:-.01em;
+    text-transform:uppercase;margin-top:6px;
+  }
+  .trip-tag{
+    font-family:"Fraunces",serif;font-style:italic;font-weight:500;
+    font-size:clamp(17px,2.2vw,21px);color:var(--ink-soft);margin-top:12px;max-width:44ch;
+  }
+  .trip-vibe{
+    margin-top:18px;font-size:15px;color:var(--ink);max-width:52ch;
+    border-left:3px solid var(--t,var(--accent));padding-left:14px;
+  }
+  .trip-deco{position:absolute;right:0;top:0;opacity:.16;pointer-events:none}
+  .trip-deco svg{width:150px;height:150px}
+
+  .trip-body{display:grid;grid-template-columns:1.6fr 1fr;gap:40px;margin-top:44px}
+
+  /* itinerary timeline */
+  .itin{position:relative;padding-left:26px}
+  .itin::before{
+    content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(var(--t,var(--accent)),rgba(34,28,18,.12));
+  }
+  .day{position:relative;padding:0 0 18px}
+  .day::before{
+    content:"";position:absolute;left:-26px;top:5px;width:12px;height:12px;border-radius:50%;
+    background:var(--paper);border:2.5px solid var(--t,var(--accent));
+  }
+  .day .dlabel{
+    font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--ink-soft);
+  }
+  .day .dlabel b{color:var(--t,var(--accent));font-weight:700}
+  .day p{font-size:14.5px;margin-top:2px;color:var(--ink)}
+  .day p .hl{font-weight:600}
+
+  /* highlights chips */
+  .side h3{
+    font-family:"Fraunces",serif;font-weight:700;font-size:15px;letter-spacing:.08em;
+    text-transform:uppercase;margin-bottom:12px;
+  }
+  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+  .chip{
+    font-size:12.5px;font-weight:500;border:1px solid var(--t,var(--accent));
+    color:var(--ink);border-radius:999px;padding:6px 12px;background:rgba(255,255,255,.35);
+  }
+  .fact{display:flex;gap:10px;align-items:baseline;font-size:14px;padding:9px 0;border-top:1px dashed var(--line)}
+  .fact .k{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);font-weight:600;min-width:74px}
+  .fact .v{color:var(--ink)}
+  .bestfor{
+    margin-top:22px;border:1.5px solid var(--t,var(--accent));border-radius:14px;
+    padding:14px 16px;background:rgba(255,255,255,.4);
+  }
+  .bestfor .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--t,var(--accent))}
+  .bestfor p{font-size:14.5px;margin-top:4px}
+
+  /* ---------- COMPARE ---------- */
+  .compare{padding:80px 0 20px}
+  .sec-label{
+    font-family:"Fraunces",serif;font-weight:800;font-size:clamp(28px,4vw,40px);
+    text-transform:uppercase;letter-spacing:-.01em;margin-bottom:8px;
+  }
+  .sec-sub{font-family:"Fraunces",serif;font-style:italic;font-size:18px;color:var(--ink-soft);margin-bottom:32px}
+  .table-scroll{overflow-x:auto;border:1.5px solid var(--ink);border-radius:16px;background:rgba(255,255,255,.4)}
+  table{width:100%;border-collapse:collapse;min-width:760px;font-size:13.5px}
+  th,td{padding:13px 14px;text-align:left;vertical-align:top}
+  thead th{
+    font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;
+    border-bottom:1.5px solid var(--ink);
+  }
+  tbody tr:nth-child(even){background:rgba(34,28,18,.035)}
+  tbody td{border-bottom:1px solid var(--line)}
+  tbody tr:last-child td{border-bottom:none}
+  td.trip-cell{font-weight:600}
+  td.trip-cell .n{font-family:"Fraunces",serif;font-weight:900;color:var(--t,var(--accent));margin-right:6px}
+  .dots{letter-spacing:.1em;font-weight:600;white-space:nowrap}
+  .dots .on{color:var(--t,var(--accent))}
+  .dots .off{color:rgba(34,28,18,.22)}
+
+  /* ---------- HOW TO CHOOSE ---------- */
+  .choose{padding:72px 0 20px}
+  .choose-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .choose-card{
+    border:1.5px solid var(--line);border-radius:16px;padding:20px 22px;
+    background:rgba(255,255,255,.4);transition:transform .25s,border-color .25s;
+  }
+  .choose-card:hover{transform:translateY(-3px);border-color:var(--ink)}
+  .choose-card .q{font-family:"Fraunces",serif;font-weight:700;font-size:18px;margin-bottom:8px}
+  .choose-card .a{font-size:14.5px;color:var(--ink)}
+  .choose-card .a b{font-weight:600}
+  .choose-card .go{display:inline-block;margin-top:10px;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t,var(--accent))}
+
+  /* ---------- NOTES ---------- */
+  .notes{padding:72px 0 20px}
+  .notes-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .note{border:1.5px solid var(--line);border-radius:16px;padding:20px 22px;background:rgba(255,255,255,.4)}
+  .note h4{font-family:"Fraunces",serif;font-weight:700;font-size:16px;margin-bottom:8px}
+  .note p{font-size:14px;color:var(--ink-soft)}
+
+  footer{
+    margin-top:80px;border-top:2px solid var(--ink);padding:28px 0 48px;
+    font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);
+    display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;
+  }
+
+  /* reveal animation */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1)}
+  .reveal.visible{opacity:1;transform:none}
+  .hero .reveal{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+  .hero .reveal:nth-child(2){animation-delay:.08s}
+  .hero .reveal:nth-child(3){animation-delay:.16s}
+  .hero .reveal:nth-child(4){animation-delay:.24s}
+  @keyframes rise{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+
+  @media (max-width:860px){
+    .tickets{grid-template-columns:repeat(2,1fr)}
+    .trip-head{grid-template-columns:1fr}
+    .trip-body{grid-template-columns:1fr}
+    .choose-grid{grid-template-columns:1fr}
+    .notes-grid{grid-template-columns:1fr}
+    .stamp{width:110px;height:110px;top:120px;right:4%}
+    .hero-top{flex-direction:column;gap:6px;align-items:flex-start}
+  }
+  @media (max-width:480px){
+    .tickets{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <!-- ============ HERO ============ -->
+  <header class="hero">
+    <div class="hero-top reveal">
+      <span>Family trip planning</span>
+      <span><b>March 5–14, 2027</b> · 8–9 days</span>
+      <span>2–3 families · kids 6–14</span>
+    </div>
+
+    <h1 class="hero-title">
+      <span class="row reveal">Central</span>
+      <span class="row row2 reveal">America</span>
+    </h1>
+
+    <p class="hero-sub reveal">Five ways to go. One unforgettable trip. <em>Rafting, snorkeling, jungle hikes, zip lines</em> — then a beach resort to melt into.</p>
+
+    <div class="hero-meta reveal">
+      <span class="meta-chip">66% adventure</span>
+      <span class="meta-chip">33% beach resort</span>
+      <span class="meta-chip">Home base + day trips</span>
+      <span class="meta-chip">Rafting with a riverside lunch</span>
+    </div>
+
+    <div class="stamp" aria-hidden="true">
+      <svg viewBox="0 0 150 150">
+        <circle class="ring" cx="75" cy="75" r="70"/>
+        <circle class="ring" cx="75" cy="75" r="62"/>
+        <path id="stamparc" d="M 75 75 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0" fill="none"/>
+        <text class="txt"><textPath href="#stamparc">MARCH 5–14 · 2027 · FAMILY TRIP ·</textPath></text>
+        <circle class="core" cx="75" cy="75" r="34"/>
+        <text class="core-txt" x="75" y="72" text-anchor="middle">5</text>
+        <text class="core-txt" x="75" y="90" text-anchor="middle" font-size="9" letter-spacing=".2em">TRIPS</text>
+      </svg>
+    </div>
+
+    <nav class="tickets" aria-label="The five trips">
+      <a class="ticket reveal" href="#trip-01" style="--t:#C4451F">
+        <div class="num">01</div>
+        <div class="tname">Volcano &amp; Coast</div>
+        <div class="tloc">Costa Rica</div>
+      </a>
+      <a class="ticket reveal" href="#trip-02" style="--t:#2E7D32">
+        <div class="num">02</div>
+        <div class="tname">Jungle &amp; Wildlife Coast</div>
+        <div class="tloc">Costa Rica</div>
+      </a>
+      <a class="ticket reveal" href="#trip-03" style="--t:#0E7C7B">
+        <div class="num">03</div>
+        <div class="tname">Reef &amp; Ruins</div>
+        <div class="tloc">Belize</div>
+      </a>
+      <a class="ticket reveal" href="#trip-04" style="--t:#6B4F2E">
+        <div class="num">04</div>
+        <div class="tname">Raft &amp; Cloud Forest</div>
+        <div class="tloc">Panama</div>
+      </a>
+      <a class="ticket reveal" href="#trip-05" style="--t:#1B4F72">
+        <div class="num">05</div>
+        <div class="tname">Jungle &amp; Island</div>
+        <div class="tloc">Honduras</div>
+      </a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ============ TRIP 01 ============ -->
+    <section class="trip" id="trip-01" style="--t:#C4451F">
+      <div class="trip-head reveal">
+        <div>
+          <div class="trip-num">01</div>
+          <h2 class="trip-name">Volcano &amp; Coast</h2>
+          <p class="trip-tag">Raft the jungle rivers by day, melt into an all-inclusive beach resort by night.</p>
+        </div>
+        <div>
+          <p class="trip-vibe">The classic Costa Rica combo. Six days of volcano-country adventure out of one villa, then three days of zero-decisions all-inclusive beach life. The rafting-with-lunch trip you described is the centerpiece.</p>
+          <div class="trip-deco" aria-hidden="true">
+            <svg viewBox="0 0 150 150" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              <path d="M20 120 L55 55 L75 90 L95 40 L130 120 Z"/>
+              <path d="M75 90 L75 70"/>
+              <circle cx="75" cy="62" r="6" fill="currentColor" stroke="none"/>
+              <path d="M20 120 H130"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="trip-body">
+        <div class="itin reveal">
+          <div class="day"><div class="dlabel"><b>D1</b> · Fri 5</div><p>Fly into <span class="hl">Liberia (LIR)</span> → drive to La Fortuna (2.5h). Check into the villa, evening hot springs.</p></div>
+          <div class="day"><div class="dlabel"><b>D2</b> · Sat 6</div><p><span class="hl">La Fortuna Waterfall</span> (early, before crowds) + Mistico hanging bridges + hot springs.</p></div>
+          <div class="day"><div class="dlabel"><b>D3</b> · Sun 7</div><p><span class="hl">Sarapiquí River rafting</span> — full day, lunch served on the riverbank. The dream trip.</p></div>
+          <div class="day"><div class="dlabel"><b>D4</b> · Mon 8</div><p>Zip lines (Sky Trek) + sloth tour + Arenal volcano hike.</p></div>
+          <div class="day"><div class="dlabel"><b>D5</b> · Tue 9</div><p>Drive to the <span class="hl">Guanacaste coast</span> (2.5h). Check into the all-inclusive resort. First beach afternoon.</p></div>
+          <div class="day"><div class="dlabel"><b>D6</b> · Wed 10</div><p><span class="hl">Catalina Islands snorkeling</span> boat trip.</p></div>
+          <div class="day"><div class="dlabel"><b>D7</b> · Thu 11</div><p><span class="hl">Rincón de la Vieja</span> day trip — waterfall hikes, zip lines, hot springs, mud pots.</p></div>
+          <div class="day"><div class="dlabel"><b>D8</b> · Fri 12</div><p>Beach day — surf lessons in Tamarindo or a Palo Verde wildlife boat safari.</p></div>
+          <div class="day"><div class="dlabel"><b>D9</b> · Sat 13</div><p>Morning beach → fly out of LIR.</p></div>
+        </div>
+        <div class="side reveal">
+          <h3>Highlights</h3>
+          <div class="chips">
+            <span class="chip">Rafting + riverside lunch</span><span class="chip">Volcano hikes</span><span class="chip">Hot springs</span><span class="chip">Zip lines</span><span class="chip">All-inclusive resort</span><span class="chip">Snorkeling</span>
+          </div>
+          <h3>Lodging</h3>
+          <div class="fact"><span class="k">Adventure</span><span class="v">5–6BR villa with pool, volcano views (El Castillo / Chachagua)</span></div>
+          <div class="fact"><span class="k">Beach</span><span class="v">Westin Reserva Conchal — all-inclusive, kids club, crushed-shell beach</span></div>
+          <div class="fact"><span class="k">Price</span><span class="v">$$$ · mid-high</span></div>
+          <div class="bestfor">
+            <div class="k">Best for</div>
+            <p>The group that wants maximum adventure <em>and</em> an easy, no-decisions all-inclusive finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRIP 02 ============ -->
+    <section class="trip" id="trip-02" style="--t:#2E7D32">
+      <div class="trip-head reveal">
+        <div>
+          <div class="trip-num">02</div>
+          <h2 class="trip-name">Jungle &amp; Wildlife Coast</h2>
+          <p class="trip-tag">Volcano adventures, then a lush green coast where monkeys wake you up.</p>
+        </div>
+        <div>
+          <p class="trip-vibe">Same volcano-country adventure core, but the beach leg is Manuel Antonio — a rainforest-meets-ocean national park with sloths and monkeys everywhere, and boutique resorts instead of big-box all-inclusives.</p>
+          <div class="trip-deco" aria-hidden="true">
+            <svg viewBox="0 0 150 150" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              <path d="M20 120 C40 60 60 60 75 120"/>
+              <path d="M55 120 C70 70 90 70 100 120"/>
+              <path d="M20 120 H130"/>
+              <circle cx="110" cy="40" r="10" fill="currentColor" stroke="none"/>
+              <path d="M110 30 C110 20 118 20 118 30 C118 38 110 38 110 30"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="trip-body">
+        <div class="itin reveal">
+          <div class="day"><div class="dlabel"><b>D1</b> · Fri 5</div><p>Fly into <span class="hl">San José (SJO)</span> → drive to La Fortuna (2.5h). Villa + hot springs.</p></div>
+          <div class="day"><div class="dlabel"><b>D2</b> · Sat 6</div><p><span class="hl">La Fortuna Waterfall</span> + Mistico hanging bridges + hot springs.</p></div>
+          <div class="day"><div class="dlabel"><b>D3</b> · Sun 7</div><p><span class="hl">Sarapiquí River rafting</span> — full day, lunch on the riverbank.</p></div>
+          <div class="day"><div class="dlabel"><b>D4</b> · Mon 8</div><p>Zip lines + chocolate tour + Arenal volcano hike.</p></div>
+          <div class="day"><div class="dlabel"><b>D5</b> · Tue 9</div><p>Drive to <span class="hl">Manuel Antonio</span> (3.5h). Check into a boutique resort on the green coast.</p></div>
+          <div class="day"><div class="dlabel"><b>D6</b> · Wed 10</div><p><span class="hl">Manuel Antonio National Park</span> — sloths, capuchins, white-sand beach.</p></div>
+          <div class="day"><div class="dlabel"><b>D7</b> · Thu 11</div><p>Damás Island snorkeling boat trip, or waterfall + beach day.</p></div>
+          <div class="day"><div class="dlabel"><b>D8</b> · Fri 12</div><p>Beach day — kayaking, wildlife spotting, relax.</p></div>
+          <div class="day"><div class="dlabel"><b>D9</b> · Sat 13</div><p>Fly out of SJO.</p></div>
+        </div>
+        <div class="side reveal">
+          <h3>Highlights</h3>
+          <div class="chips">
+            <span class="chip">Rafting + riverside lunch</span><span class="chip">Sloths &amp; monkeys</span><span class="chip">National-park beach</span><span class="chip">Boutique resorts</span><span class="chip">Zip lines</span><span class="chip">Chocolate tour</span>
+          </div>
+          <h3>Lodging</h3>
+          <div class="fact"><span class="k">Adventure</span><span class="v">5–6BR villa with pool, volcano views</span></div>
+          <div class="fact"><span class="k">Beach</span><span class="v">Tulemar or Arenas del Mar — boutique, jungle-set, wildlife on-site</span></div>
+          <div class="fact"><span class="k">Price</span><span class="v">$$$ · mid-high</span></div>
+          <div class="bestfor">
+            <div class="k">Best for</div>
+            <p>Wildlife lovers who want a lush, green coast and boutique charm instead of a dry all-inclusive.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRIP 03 ============ -->
+    <section class="trip" id="trip-03" style="--t:#0E7C7B">
+      <div class="trip-head reveal">
+        <div>
+          <div class="trip-num">03</div>
+          <h2 class="trip-name">Reef &amp; Ruins</h2>
+          <p class="trip-tag">Cave-tube through Mayan underworlds, then snorkel the world's second-largest reef.</p>
+        </div>
+        <div>
+          <p class="trip-vibe">The best snorkeling in Central America, plus the single most amazing family adventure in the region — the ATM Cave. Rafting becomes cave tubing (float down a river through limestone caves, lunch stop included). English-speaking, which makes a big group easy.</p>
+          <div class="trip-deco" aria-hidden="true">
+            <svg viewBox="0 0 150 150" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              <path d="M20 100 L45 100 L55 80 L75 100 L95 80 L105 100 L130 100"/>
+              <path d="M20 120 H130"/>
+              <path d="M30 60 C45 40 60 40 75 60 C90 40 105 40 120 60"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="trip-body">
+        <div class="itin reveal">
+          <div class="day"><div class="dlabel"><b>D1</b> · Fri 5</div><p>Fly into <span class="hl">Belize City (BZE)</span> → drive to San Ignacio (2h). Jungle lodge.</p></div>
+          <div class="day"><div class="dlabel"><b>D2</b> · Sat 6</div><p><span class="hl">Cave tubing</span> (half day) + <span class="hl">Xunantunich</span> Mayan ruins — climb the big temple.</p></div>
+          <div class="day"><div class="dlabel"><b>D3</b> · Sun 7</div><p><span class="hl">ATM Cave</span> — full-day underworld adventure, wading through a cave of Mayan artifacts.</p></div>
+          <div class="day"><div class="dlabel"><b>D4</b> · Mon 8</div><p>Zip lines (Calico Jack's) + Rio On Pools swimming holes.</p></div>
+          <div class="day"><div class="dlabel"><b>D5</b> · Tue 9</div><p><span class="hl">Tikal day trip</span> into Guatemala — jungle temples, howler monkeys, toucans.</p></div>
+          <div class="day"><div class="dlabel"><b>D6</b> · Wed 10</div><p>Fly to <span class="hl">Ambergris Caye</span> (~1h). Check into the beach resort.</p></div>
+          <div class="day"><div class="dlabel"><b>D7</b> · Thu 11</div><p><span class="hl">Hol Chan + Shark Ray Alley</span> snorkeling — nurse sharks and rays, kids go nuts.</p></div>
+          <div class="day"><div class="dlabel"><b>D8</b> · Fri 12</div><p>Mexico Rocks snorkeling, pool/beach day, golf-cart exploring.</p></div>
+          <div class="day"><div class="dlabel"><b>D9</b> · Sat 13</div><p>Fly out (San Pedro → BZE → home).</p></div>
+        </div>
+        <div class="side reveal">
+          <h3>Highlights</h3>
+          <div class="chips">
+            <span class="chip">ATM Cave</span><span class="chip">Cave tubing</span><span class="chip">Tikal</span><span class="chip">World-class snorkeling</span><span class="chip">Mayan ruins</span><span class="chip">English-speaking</span>
+          </div>
+          <h3>Lodging</h3>
+          <div class="fact"><span class="k">Adventure</span><span class="v">Jungle lodge near San Ignacio</span></div>
+          <div class="fact"><span class="k">Beach</span><span class="v">Alaia or Victoria House, Ambergris Caye — pool + dock snorkeling</span></div>
+          <div class="fact"><span class="k">Price</span><span class="v">$$$$ · priciest</span></div>
+          <div class="bestfor">
+            <div class="k">Best for</div>
+            <p>Snorkel-first groups. The water is the star — the beach itself is modest, but it's the clearest in the region.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRIP 04 ============ -->
+    <section class="trip" id="trip-04" style="--t:#6B4F2E">
+      <div class="trip-head reveal">
+        <div>
+          <div class="trip-num">04</div>
+          <h2 class="trip-name">Raft &amp; Cloud Forest</h2>
+          <p class="trip-tag">The rafting-with-lunch dream, world-class zip lines, and cool coffee-country air.</p>
+        </div>
+        <div>
+          <p class="trip-vibe">Boquete is the rafting answer — the Rio Caldera run is family-friendly with lunch on the riverbank, and the Chiriquí Viejo is the big one for the adults and older kids. Then a cloud-forest, coffee-farm, waterfall world. The beach leg is the trade-off: good, not great.</p>
+          <div class="trip-deco" aria-hidden="true">
+            <svg viewBox="0 0 150 150" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              <path d="M20 120 L50 70 L70 95 L95 55 L130 120 Z"/>
+              <path d="M20 120 H130"/>
+              <circle cx="95" cy="45" r="7" fill="currentColor" stroke="none"/>
+              <path d="M95 38 V52 M88 45 H102"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="trip-body">
+        <div class="itin reveal">
+          <div class="day"><div class="dlabel"><b>D1</b> · Fri 5</div><p>Fly into <span class="hl">David (DAV)</span> → drive to Boquete (45 min). Highland lodge.</p></div>
+          <div class="day"><div class="dlabel"><b>D2</b> · Sat 6</div><p><span class="hl">Rafting</span> — Rio Caldera (class II–III, family, lunch on the riverbank) for everyone, or Chiriquí Viejo (class III–IV) for the adults.</p></div>
+          <div class="day"><div class="dlabel"><b>D3</b> · Sun 7</div><p><span class="hl">Boquete Tree Trek</span> zip lines (one of the longest courses in the world) + swim in the Los Cangilones canyon.</p></div>
+          <div class="day"><div class="dlabel"><b>D4</b> · Mon 8</div><p><span class="hl">Quetzal Trail</span> cloud-forest hike + Geisha coffee farm tour.</p></div>
+          <div class="day"><div class="dlabel"><b>D5</b> · Tue 9</div><p>Waterfall hikes + hot springs, or a second rafting day.</p></div>
+          <div class="day"><div class="dlabel"><b>D6</b> · Wed 10</div><p>Fly to <span class="hl">Bocas del Toro</span> (or drive to the Pacific coast).</p></div>
+          <div class="day"><div class="dlabel"><b>D7</b> · Thu 11</div><p>Bocas snorkeling + Red Frog Beach.</p></div>
+          <div class="day"><div class="dlabel"><b>D8</b> · Fri 12</div><p>Island day — beach, kayaking, relax.</p></div>
+          <div class="day"><div class="dlabel"><b>D9</b> · Sat 13</div><p>Fly out.</p></div>
+        </div>
+        <div class="side reveal">
+          <h3>Highlights</h3>
+          <div class="chips">
+            <span class="chip">Rafting + riverside lunch</span><span class="chip">World-class zip lines</span><span class="chip">Cloud forest</span><span class="chip">Coffee farms</span><span class="chip">Waterfall hikes</span><span class="chip">Cool mountain air</span>
+          </div>
+          <h3>Lodging</h3>
+          <div class="fact"><span class="k">Adventure</span><span class="v">Highland lodge in Boquete</span></div>
+          <div class="fact"><span class="k">Beach</span><span class="v">Bocas del Toro resort (rustic-chic) or Pacific all-inclusive (dated)</span></div>
+          <div class="fact"><span class="k">Price</span><span class="v">$$$ · mid</span></div>
+          <div class="bestfor">
+            <div class="k">Best for</div>
+            <p>The rafting-with-lunch dream, non-negotiable. Accept a beach leg that's good but not the region's best.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TRIP 05 ============ -->
+    <section class="trip" id="trip-05" style="--t:#1B4F72">
+      <div class="trip-head reveal">
+        <div>
+          <div class="trip-num">05</div>
+          <h2 class="trip-name">Jungle &amp; Island</h2>
+          <p class="trip-tag">A wild riverside eco-lodge, then the most beautiful beach in the Caribbean.</p>
+        </div>
+        <div>
+          <p class="trip-vibe">The most adventurous of the five. Pico Bonito is a rainforest eco-lodge with jungle and waterfall hikes, zip lines, and real whitewater on the Cangrejal River. Then Roatán's West Bay — a stunning beach with world-class snorkeling right off the sand. The trade-off: the rafting is class III–IV (too big for the 6–7 year olds) and the logistics are the most complex.</p>
+          <div class="trip-deco" aria-hidden="true">
+            <svg viewBox="0 0 150 150" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round">
+              <path d="M20 100 C45 80 60 80 75 100 C90 80 105 80 130 100"/>
+              <path d="M20 100 V120 H130 V100"/>
+              <path d="M75 100 V70"/>
+              <path d="M75 70 C75 55 90 55 90 70 C90 80 75 80 75 70"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <div class="trip-body">
+        <div class="itin reveal">
+          <div class="day"><div class="dlabel"><b>D1</b> · Fri 5</div><p>Fly into <span class="hl">San Pedro Sula (SAP)</span> → drive to Pico Bonito (2.5h). Eco-lodge.</p></div>
+          <div class="day"><div class="dlabel"><b>D2</b> · Sat 6</div><p><span class="hl">Jungle hikes + waterfall hikes</span> in Pico Bonito National Park.</p></div>
+          <div class="day"><div class="dlabel"><b>D3</b> · Sun 7</div><p><span class="hl">Cangrejal River rafting</span> (class III–IV) + zip lines.</p></div>
+          <div class="day"><div class="dlabel"><b>D4</b> · Mon 8</div><p>Canopy zip lines, river swimming, eco-lodge day.</p></div>
+          <div class="day"><div class="dlabel"><b>D5</b> · Tue 9</div><p>Fly to <span class="hl">Roatán</span> (via La Ceiba). Check into a West Bay resort.</p></div>
+          <div class="day"><div class="dlabel"><b>D6</b> · Wed 10</div><p><span class="hl">West Bay beach</span> + snorkeling right off the sand.</p></div>
+          <div class="day"><div class="dlabel"><b>D7</b> · Thu 11</div><p>Roatán reef snorkeling boat trip.</p></div>
+          <div class="day"><div class="dlabel"><b>D8</b> · Fri 12</div><p>Beach day — kayak, relax, sunset.</p></div>
+          <div class="day"><div class="dlabel"><b>D9</b> · Sat 13</div><p>Fly out.</p></div>
+        </div>
+        <div class="side reveal">
+          <h3>Highlights</h3>
+          <div class="chips">
+            <span class="chip">Jungle &amp; waterfall hikes</span><span class="chip">Cangrejal rafting</span><span class="chip">West Bay beach</span><span class="chip">World-class reef snorkeling</span><span class="chip">Eco-lodge</span>
+          </div>
+          <h3>Lodging</h3>
+          <div class="fact"><span class="k">Adventure</span><span class="v">Pico Bonito Lodge — riverside eco-lodge</span></div>
+          <div class="fact"><span class="k">Beach</span><span class="v">Infinity Bay or Grand Roatán, West Bay</span></div>
+          <div class="fact"><span class="k">Price</span><span class="v">$$ · most affordable</span></div>
+          <div class="bestfor">
+            <div class="k">Best for</div>
+            <p>The most adventurous group. A wild jungle leg, then the region's most beautiful beach — if the little kids can sit out the big rapids.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ COMPARE ============ -->
+    <section class="compare" id="compare">
+      <h2 class="sec-label reveal">At a glance</h2>
+      <p class="sec-sub reveal">Every trip is 6 days adventure + 3 days beach resort. Here's how they differ.</p>
+      <div class="table-scroll reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>Trip</th><th>Rafting</th><th>Snorkeling</th><th>Beach</th><th>Adventure</th><th>Price</th><th>Best for</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="--t:#C4451F">
+              <td class="trip-cell"><span class="n">01</span>Costa Rica · Volcano &amp; Coast</td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td class="dots"><span class="on">●●</span><span class="off">●</span></td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td>$$$</td>
+              <td>Classic combo, all-inclusive finish</td>
+            </tr>
+            <tr style="--t:#2E7D32">
+              <td class="trip-cell"><span class="n">02</span>Costa Rica · Jungle &amp; Wildlife Coast</td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td class="dots"><span class="on">●</span><span class="off">●●</span></td>
+              <td class="dots"><span class="on">●●</span><span class="off">●</span></td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td>$$$</td>
+              <td>Wildlife, boutique charm</td>
+            </tr>
+            <tr style="--t:#0E7C7B">
+              <td class="trip-cell"><span class="n">03</span>Belize · Reef &amp; Ruins</td>
+              <td class="dots"><span class="off">—</span> cave tubing</td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td class="dots"><span class="on">●●</span><span class="off">●</span></td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td>$$$$</td>
+              <td>Snorkel-first, clearest water</td>
+            </tr>
+            <tr style="--t:#6B4F2E">
+              <td class="trip-cell"><span class="n">04</span>Panama · Raft &amp; Cloud Forest</td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td class="dots"><span class="on">●●</span><span class="off">●</span></td>
+              <td class="dots"><span class="on">●</span><span class="off">●●</span></td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td>$$$</td>
+              <td>The rafting dream, coffee country</td>
+            </tr>
+            <tr style="--t:#1B4F72">
+              <td class="trip-cell"><span class="n">05</span>Honduras · Jungle &amp; Island</td>
+              <td class="dots"><span class="on">●●</span><span class="off">●</span> advanced</td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td class="dots"><span class="on">●●●</span></td>
+              <td class="dots"><span class="on">●●●●</span></td>
+              <td>$$</td>
+              <td>Most adventurous, best beach</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ============ HOW TO CHOOSE ============ -->
+    <section class="choose" id="choose">
+      <h2 class="sec-label reveal">How to choose</h2>
+      <p class="sec-sub reveal">Answer the question that matters most to your group.</p>
+      <div class="choose-grid">
+        <div class="choose-card reveal" style="--t:#6B4F2E">
+          <div class="q">"The rafting-with-lunch dream is non-negotiable."</div>
+          <div class="a">Go <b>Panama (04)</b> — or either Costa Rica trip (01/02), which have the same riverside-lunch rafting with a better beach finish.</div>
+          <div class="go">→ Trip 04</div>
+        </div>
+        <div class="choose-card reveal" style="--t:#0E7C7B">
+          <div class="q">"Best snorkeling wins."</div>
+          <div class="a">Go <b>Belize (03)</b> for the clearest water, or <b>Honduras (05)</b> for a reef you can snorkel right off the sand.</div>
+          <div class="go">→ Trip 03 or 05</div>
+        </div>
+        <div class="choose-card reveal" style="--t:#C4451F">
+          <div class="q">"We want an easy, all-inclusive finish."</div>
+          <div class="a">Go <b>Costa Rica (01)</b> — Westin Conchal means zero decisions for the last three days.</div>
+          <div class="go">→ Trip 01</div>
+        </div>
+        <div class="choose-card reveal" style="--t:#2E7D32">
+          <div class="q">"Wildlife everywhere, boutique not big-box."</div>
+          <div class="a">Go <b>Costa Rica (02)</b> — Manuel Antonio's monkeys and sloths are the whole point.</div>
+          <div class="go">→ Trip 02</div>
+        </div>
+        <div class="choose-card reveal" style="--t:#1B4F72">
+          <div class="q">"We've already done Costa Rica."</div>
+          <div class="a">Skip 01 and 02. <b>Belize (03)</b>, <b>Panama (04)</b>, or <b>Honduras (05)</b> are all fresh ground.</div>
+          <div class="go">→ Trips 03–05</div>
+        </div>
+        <div class="choose-card reveal" style="--t:#C4451F">
+          <div class="q">"Budget matters most."</div>
+          <div class="a">Go <b>Honduras (05)</b> — the most affordable of the five. (Nicaragua is cheaper still, but no rafting.)</div>
+          <div class="go">→ Trip 05</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOTES ============ -->
+    <section class="notes" id="notes">
+      <h2 class="sec-label reveal">Good to know</h2>
+      <p class="sec-sub reveal">The fine print that makes a big group trip work.</p>
+      <div class="notes-grid">
+        <div class="note reveal">
+          <h4>March weather</h4>
+          <p>March is dry season on the Pacific side (Costa Rica, Panama) and in Belize. Caribbean spots (Bocas, Roatán) are drier too, but can still see showers. Book the Pacific-side trips for guaranteed sun.</p>
+        </div>
+        <div class="note reveal">
+          <h4>Book early</h4>
+          <p>March is peak season. Lock villas and resorts 4–6 months out; book rafting and snorkeling 1–2 months ahead. You're ~7 months out right now — perfect timing.</p>
+        </div>
+        <div class="note reveal">
+          <h4>Group logistics</h4>
+          <p>8–11 people means a 5–6 bedroom villa or 2–3 units, and one 12-seater van or two SUVs. Ask for 4x4 if the villa is up a gravel hill.</p>
+        </div>
+        <div class="note reveal">
+          <h4>Kids &amp; rafting</h4>
+          <p>Class II–III runs (Sarapiquí, Balsa, Rio Caldera, Tenorio) welcome kids as young as 6–7. Class III–IV (Pacuare, Chiriquí Viejo, Cangrejal) usually needs 12+.</p>
+        </div>
+        <div class="note reveal">
+          <h4>Flights</h4>
+          <p>Open-jaw tickets (fly into one city, out of another) avoid backtracking. Costa Rica: SJO/LIR. Belize: BZE. Panama: DAV. Honduras: SAP + RTB.</p>
+        </div>
+        <div class="note reveal">
+          <h4>Prices</h4>
+          <p>Rough per-family lodging estimates: $$ = $2–3k, $$$ = $3–5k, $$$$ = $5–7k for the week. Flights and activities on top.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <span>Central America · Family Edition</span>
+    <span>March 5–14, 2027</span>
+    <span>Made for the group — vote and we'll go deep on the winner</span>
+  </footer>
+
+</div>
+
+<script>
+  // scroll reveal
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(e.isIntersecting){ e.target.classList.add('visible'); io.unobserve(e.target); }
+    });
+  },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

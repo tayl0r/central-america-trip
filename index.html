@@ -177,30 +177,17 @@
   .bestfor .k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:var(--t,var(--accent))}
   .bestfor p{font-size:14.5px;margin-top:4px}
 
-  /* ---------- MAPS ---------- */
-  .map{margin-top:44px;border:1.5px solid var(--ink);border-radius:16px;background:var(--paper-2);padding:16px 16px 12px;position:relative;overflow:hidden}
-  .map-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px}
-  .map-title{font-family:"Fraunces",serif;font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
-  .map-legend{display:flex;gap:14px;flex-wrap:wrap}
-  .map-legend .lg{display:inline-flex;align-items:center;gap:6px;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-soft);font-weight:500}
-  .map-legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block;border:1.5px solid var(--ink);background:transparent}
-  .map-legend .dot.base{background:var(--t,var(--accent));border-color:var(--t,var(--accent))}
-  .map-legend .dot.beach{background:var(--t,var(--accent));border-color:var(--t,var(--accent));box-shadow:0 0 0 2px var(--paper-2),0 0 0 4px var(--t,var(--accent))}
-  .map-legend .dot.air{background:var(--paper-2);border-color:var(--t,var(--accent));border-radius:2px;transform:rotate(45deg)}
-  .map-legend .dot.day{border-color:var(--t,var(--accent))}
-  .map svg{display:block;width:100%;height:auto;border-radius:10px;background:var(--paper-2)}
-  .map .main{fill:var(--paper);stroke:var(--ink);stroke-width:2;stroke-linejoin:round}
-  .map .ctx{fill:rgba(34,28,18,.05);stroke:rgba(34,28,18,.3);stroke-width:1.5;stroke-linejoin:round}
-  .map .route{fill:none;stroke:var(--t,var(--accent));stroke-width:3;stroke-dasharray:9 7;stroke-linecap:round;stroke-linejoin:round;opacity:.8}
-  .map .m-base{fill:var(--t,var(--accent));stroke:var(--paper);stroke-width:2.5}
-  .map .m-beach{fill:var(--t,var(--accent));stroke:var(--paper);stroke-width:2.5}
-  .map .m-beach-ring{fill:none;stroke:var(--t,var(--accent));stroke-width:2}
-  .map .m-air{fill:var(--paper);stroke:var(--t,var(--accent));stroke-width:2.5}
-  .map .m-day{fill:none;stroke:var(--t,var(--accent));stroke-width:2.5}
-  .map .lbl{font-family:"Outfit",sans-serif;font-size:13px;font-weight:600;fill:var(--ink)}
-  .map .lbl-sub{font-family:"Outfit",sans-serif;font-size:10.5px;font-weight:500;fill:var(--ink-soft);letter-spacing:.04em}
-  .map .compass{stroke:var(--ink-soft);fill:var(--ink-soft)}
-  .map .compass-txt{font-family:"Outfit",sans-serif;font-size:12px;font-weight:700;fill:var(--ink-soft)}
+  /* ---------- COPY LINK ---------- */
+  .copylink{
+    margin-top:16px;display:inline-flex;align-items:center;gap:6px;
+    font-family:"Outfit",sans-serif;font-size:12px;font-weight:600;
+    letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink);background:rgba(255,255,255,.4);
+    border:1px solid var(--line);border-radius:999px;padding:7px 14px;
+    cursor:pointer;transition:border-color .2s,color .2s;
+  }
+  .copylink:hover{border-color:var(--t,var(--accent));color:var(--t,var(--accent))}
+  .copylink.copied{color:var(--t,var(--accent));border-color:var(--t,var(--accent))}
 
   /* ---------- LINKS ---------- */
   .links{margin-top:44px;border:1.5px solid var(--ink);border-radius:16px;background:rgba(255,255,255,.4);padding:20px 22px}
@@ -363,6 +350,7 @@
           <div class="trip-num">01</div>
           <h2 class="trip-name">Volcano &amp; Coast</h2>
           <p class="trip-tag">Raft the jungle rivers by day, melt into an all-inclusive beach resort by night.</p>
+            <button class="copylink" type="button" data-link="#trip-01">Copy trip link</button>
         </div>
         <div>
           <p class="trip-vibe">The classic Costa Rica combo. Six days of volcano-country adventure out of one villa, then three days of zero-decisions all-inclusive beach life.</p>
@@ -479,6 +467,7 @@
           <div class="trip-num">02</div>
           <h2 class="trip-name">Jungle &amp; Wildlife Coast</h2>
           <p class="trip-tag">Volcano adventures, then a lush green coast where monkeys wake you up.</p>
+            <button class="copylink" type="button" data-link="#trip-02">Copy trip link</button>
         </div>
         <div>
           <p class="trip-vibe">Same volcano-country adventure core, but the beach leg is Manuel Antonio — a rainforest-meets-ocean national park with sloths and monkeys everywhere, and boutique resorts instead of big-box all-inclusives.</p>
@@ -584,6 +573,7 @@
           <div class="trip-num">03</div>
           <h2 class="trip-name">Reef &amp; Ruins</h2>
           <p class="trip-tag">Cave-tube through Mayan underworlds, then snorkel the world's second-largest reef.</p>
+            <button class="copylink" type="button" data-link="#trip-03">Copy trip link</button>
         </div>
         <div>
           <p class="trip-vibe">The best snorkeling in Central America, plus the single most amazing family adventure in the region — the ATM Cave. Rafting becomes cave tubing (float down a river through limestone caves, lunch stop included). English-speaking, which makes a big group easy.</p>
@@ -695,6 +685,7 @@
           <div class="trip-num">04</div>
           <h2 class="trip-name">Raft &amp; Cloud Forest</h2>
           <p class="trip-tag">The rafting-with-lunch dream, world-class zip lines, and cool coffee-country air.</p>
+            <button class="copylink" type="button" data-link="#trip-04">Copy trip link</button>
         </div>
         <div>
           <p class="trip-vibe">Boquete is the rafting answer — the Rio Caldera run is family-friendly with lunch on the riverbank, and the Chiriquí Viejo is the big one for the adults and older kids. Then a cloud-forest, coffee-farm, waterfall world. The beach leg is the trade-off: good, not great.</p>
@@ -807,6 +798,7 @@
           <div class="trip-num">05</div>
           <h2 class="trip-name">Jungle &amp; Island</h2>
           <p class="trip-tag">A wild riverside eco-lodge, then the most beautiful beach in the Caribbean.</p>
+            <button class="copylink" type="button" data-link="#trip-05">Copy trip link</button>
         </div>
         <div>
           <p class="trip-vibe">The most adventurous of the five. Pico Bonito is a rainforest eco-lodge with jungle and waterfall hikes, zip lines, and real whitewater on the Cangrejal River. Then Roatán's West Bay — a stunning beach with world-class snorkeling right off the sand. The trade-off: the rafting is class III–IV (too big for the 6–7 year olds) and the logistics are the most complex.</p>
@@ -1062,6 +1054,20 @@
     });
   },{threshold:.12,rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+  // copy direct trip link
+  document.querySelectorAll('.copylink').forEach(btn=>{
+    btn.addEventListener('click',async()=>{
+      const url = location.origin + location.pathname + btn.dataset.link;
+      try{
+        await navigator.clipboard.writeText(url);
+        const orig = btn.textContent;
+        btn.textContent = 'Copied';
+        btn.classList.add('copied');
+        setTimeout(()=>{btn.textContent=orig;btn.classList.remove('copied');},1500);
+      }catch(e){ prompt('Copy this link:', url); }
+    });
+  });
 </script>
 </body>
 </html>
